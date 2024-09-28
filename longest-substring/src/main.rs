@@ -1,4 +1,4 @@
-// Solution to https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
+// https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
 fn main() {
     println!("{}", length_of_longest_substring("test".to_string()));

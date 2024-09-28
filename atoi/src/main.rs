@@ -1,4 +1,4 @@
-// Solution to https://leetcode.com/problems/string-to-integer-atoi/description/
+// https://leetcode.com/problems/string-to-integer-atoi/
 
 fn main() {}
 

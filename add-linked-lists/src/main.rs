@@ -1,4 +1,4 @@
-// Solution to https://leetcode.com/problems/add-two-numbers/
+// https://leetcode.com/problems/add-two-numbers/
 
 fn main() {}
 
