@@ -1,12 +1,14 @@
 // https://leetcode.com/problems/zigzag-conversion/
 
-fn main() {}
+fn main() {
+    println!("{}", Solution::convert("PAYPALISHIRING".to_string(), 3))
+}
 
 struct Solution;
 
 impl Solution {
     pub fn convert(s: String, num_rows: i32) -> String {
-        if num_rows == 1 {
+        if num_rows <= 1 {
             return s;
         }
 
@@ -14,12 +16,11 @@ impl Solution {
         let num_rows = num_rows as usize;
 
         let mut grid: Vec<Vec<u8>> = vec![vec![0; s.len()]; num_rows];
-        let mut col = 0;
         let mut row = 0;
         let mut rev = false;
 
         for c in s {
-            grid[row][col] = *c;
+            grid[row].push(*c);
 
             if !rev {
                 row += 1;
@@ -27,13 +28,11 @@ impl Solution {
 
             if rev {
                 row -= 1;
-                col += 1;
             }
 
             if row == num_rows {
                 rev = true;
                 row -= 2;
-                col += 1;
             }
 
             if row == 0 {
