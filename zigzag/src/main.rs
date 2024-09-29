@@ -10,14 +10,16 @@ impl Solution {
             return s;
         }
 
+        let s = s.as_bytes();
         let num_rows = num_rows as usize;
-        let mut grid: Vec<Vec<char>> = vec![vec![' '; s.len()]; num_rows];
+
+        let mut grid: Vec<Vec<u8>> = vec![vec![0; s.len()]; num_rows];
         let mut col = 0;
         let mut row = 0;
         let mut rev = false;
 
-        for c in s.chars() {
-            grid[row][col] = c;
+        for c in s {
+            grid[row][col] = *c;
 
             if !rev {
                 row += 1;
@@ -39,6 +41,10 @@ impl Solution {
             }
         }
 
-        grid.iter().flatten().filter(|&&x| x != ' ').collect()
+        grid.iter()
+            .flatten()
+            .filter(|&&x| x != 0)
+            .map(|&x| x as char)
+            .collect()
     }
 }
