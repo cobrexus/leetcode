@@ -1,8 +1,6 @@
 // https://leetcode.com/problems/string-to-integer-atoi/
 
-fn main() {
-    println!("{}", Solution::my_atoi(" -1010023630o4".to_string()));
-}
+fn main() {}
 
 struct Solution;
 

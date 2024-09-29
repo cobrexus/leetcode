@@ -1,8 +1,6 @@
 // https://leetcode.com/problems/longest-substring-without-repeating-characters/
 
-fn main() {
-    println!("{}", length_of_longest_substring("test".to_string()));
-}
+fn main() {}
 
 pub fn length_of_longest_substring(s: String) -> i32 {
     let s = s.chars().collect::<Vec<_>>();

@@ -1,8 +1,6 @@
 // https://leetcode.com/problems/palindrome-number/
 
-fn main() {
-    println!("{}", Solution::is_palindrome(121));
-}
+fn main() {}
 
 struct Solution;
 

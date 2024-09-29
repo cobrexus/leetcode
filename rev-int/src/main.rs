@@ -1,8 +1,6 @@
 // https://leetcode.com/problems/reverse-integer/
 
-fn main() {
-    println!("{}", Solution::reverse(1463847412))
-}
+fn main() {}
 
 struct Solution;
 

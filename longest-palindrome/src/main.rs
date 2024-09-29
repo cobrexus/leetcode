@@ -1,8 +1,6 @@
 // https://leetcode.com/problems/longest-palindromic-substring/
 
-fn main() {
-    println!("{}", Solution::longest_palindrome("babad".to_string()));
-}
+fn main() {}
 
 struct Solution;
 
