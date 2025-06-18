@@ -3,7 +3,7 @@
 class Solution {
   public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> x;
+        unordered_map<int, int> x{};
 
         x.reserve(nums.size());
 
