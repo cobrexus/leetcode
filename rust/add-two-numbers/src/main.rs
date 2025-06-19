@@ -44,15 +44,13 @@ impl Solution {
                 None => panic!(),
             };
 
-            match l1 {
-                Some(node) => l1 = node.next,
-                None => (),
+            if let Some(node) = l1 {
+                l1 = node.next;
             }
 
-            match l2 {
-                Some(node) => l2 = node.next,
-                None => (),
-            };
+            if let Some(node) = l2 {
+                l2 = node.next;
+            }
 
             if l1.is_none() && l2.is_none() && carry == 0 {
                 break;
