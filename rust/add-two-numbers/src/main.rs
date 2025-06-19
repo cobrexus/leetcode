@@ -39,7 +39,7 @@ impl Solution {
                 next: None,
             }));
 
-            tail = &mut tail.as_deref_mut().unwrap().next;
+            tail = &mut tail.as_mut().unwrap().next;
 
             if let Some(node) = l1 {
                 l1 = node.next;
