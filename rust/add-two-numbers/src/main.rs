@@ -34,12 +34,12 @@ impl Solution {
 
             (new_val, carry) = add(val1, val2, carry);
 
-            *tail = Some(Box::new(ListNode {
-                val: new_val,
-                next: None,
-            }));
-
-            tail = &mut tail.as_mut().unwrap().next;
+            tail = &mut tail
+                .insert(Box::new(ListNode {
+                    val: new_val,
+                    next: None,
+                }))
+                .next;
 
             if let Some(node) = l1 {
                 l1 = node.next;
