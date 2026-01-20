@@ -1,9 +1,5 @@
 // https://leetcode.com/problems/string-to-integer-atoi/
 
-fn main() {}
-
-struct Solution;
-
 impl Solution {
     pub fn my_atoi(s: String) -> i32 {
         let s = s.as_bytes();

@@ -1,11 +1,5 @@
 // https://leetcode.com/problems/zigzag-conversion/
 
-fn main() {
-    println!("{}", Solution::convert("PAYPALISHIRING".to_string(), 3))
-}
-
-struct Solution;
-
 impl Solution {
     pub fn convert(s: String, num_rows: i32) -> String {
         if num_rows <= 1 {

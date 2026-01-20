@@ -1,9 +1,5 @@
 // https://leetcode.com/problems/reverse-integer/
 
-fn main() {}
-
-struct Solution;
-
 impl Solution {
     pub fn reverse(x: i32) -> i32 {
         let z = x;
